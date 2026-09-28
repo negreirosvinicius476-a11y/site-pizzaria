@@ -1,0 +1,44 @@
+PIZZARIA RIVOLY - DEMONSTRACAO (SO FRONTEND)
+============================================
+
+Nao precisa instalar nada, nem PHP, nem banco de dados.
+Descompacte a pasta e de dois cliques em:
+
+   index.html    -> site do cliente (cardapio, carrinho, pedido)
+   painel.html   -> painel do dono
+
+Use o Google Chrome ou o Microsoft Edge. No Firefox o pedido feito no
+site pode nao aparecer no painel, porque ele guarda os arquivos separados.
+
+COMO APRESENTAR (5 minutos)
+---------------------------
+1. Site: mostre a pagina inicial e o cardapio (precos reais por tamanho).
+2. Clique numa pizza: escolha o tamanho, junte outro sabor e um adicional.
+3. Abra o carrinho, continue, preencha entrega e escolha o pagamento.
+4. Ao confirmar, abre o acompanhamento do pedido. Ele avanca sozinho
+   (recebido, confirmado, preparo, forno, saiu para entrega, entregue).
+5. Painel: entre como Administrador. O pedido que voce fez esta em
+   Pedidos. Troque o status la e veja o acompanhamento mudar.
+6. Mostre Dashboard, Faturamento (exportar Excel/CSV), Relatorios,
+   Produtos (mude um preco e recarregue o site) e Configuracoes.
+7. Entre como Atendente para mostrar que ele nao ve valores financeiros.
+
+O QUE E REAL E O QUE E EXEMPLO
+------------------------------
+Real: nome, endereco, telefone, horario, sabores, ingredientes, precos
+      por tamanho e bebidas (Google Maps, Instagram e cardapio do Anota AI).
+Exemplo: pedidos e clientes do dashboard, combos, sobremesa, adicionais,
+      taxas por bairro, PIX e debito. Tudo aparece com a etiqueta
+      "Demonstracao" no painel.
+Sem fotos ainda: as pizzas usam uma ilustracao. As fotos reais e a logo
+      entram quando forem enviadas. O "R" da logo e provisorio.
+
+DICAS
+-----
+- Tudo o que voce muda fica salvo neste navegador. Para voltar ao inicio,
+  clique em "Demonstracao - reiniciar dados" (rodape da pagina, no centro)
+  e clique de novo para confirmar.
+- Os mapas e as fontes carregam da internet. Sem internet a pagina abre,
+  so o mapa fica em branco e a letra muda um pouco.
+- Esta e uma versao para mostrar o visual e o funcionamento. Na versao
+  final os dados ficam no servidor (banco MySQL), nao no navegador.

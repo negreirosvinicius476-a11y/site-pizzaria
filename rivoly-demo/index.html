@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--SEO-->
+<title>Pizzaria Rivoly | Pizza na Lapinha, Salvador</title>
+<meta name="description" content="Pizzaria Rivoly na Rua Campos França, 02, Lapinha, Salvador (BA). Pizzas tradicionais e especiais. Delivery e retirada.">
+<!--/SEO-->
+<meta name="theme-color" content="#0e2d1d">
+<link rel="icon" href="assets/img/logo-rivoly.jpg">
+<link rel="apple-touch-icon" href="assets/img/logo-rivoly.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/css/site.css?v=20260928">
+</head>
+<body>
+<a class="sr-only" href="#cardapio">Pular para o cardápio</a>
+
+<div class="statusbar" id="statusbar"><div class="wrap"><span class="dot" id="status-dot"></span><span id="status-text">Carregando horário…</span></div></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Pizzaria Rivoly, início">
+      <img src="assets/img/logo-rivoly.jpg" onerror="this.remove()" alt="" width="44" height="44" data-bind-logo>
+      <span class="brand-name"><span data-bind="store_name">Pizzaria Rivoly</span><small data-bind="tagline">Essência da Itália</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Principal">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#onde-estamos">Onde estamos</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary header-cta" href="#cardapio">Ver cardápio</a>
+      <button class="icon-btn cart-btn" type="button" id="open-cart" aria-label="Abrir carrinho">
+        <span data-icon="cart"></span><span class="badge" id="cart-count" hidden>0</span>
+      </button>
+      <button class="icon-btn menu-toggle" type="button" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav"><span data-icon="menu"></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Menu">
+  <a href="#cardapio">Cardápio</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#avaliacoes">Avaliações</a>
+  <a href="#instagram">Instagram</a>
+  <a href="#onde-estamos">Onde estamos</a>
+  <a href="pedido.html">Acompanhar pedido</a>
+</nav>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div>
+        <span class="hero-kicker"><span data-icon="pin"></span><span id="hero-kicker">Pizzaria · Lapinha, Salvador</span></span>
+        <h1 id="hero-title">Essência da Itália na Lapinha</h1>
+        <span class="script" id="hero-script">Essência da Itália</span>
+        <p class="lead" id="hero-sub">Pizzas tradicionais e especiais da casa, em três tamanhos e com até quatro sabores.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#cardapio"><span data-icon="slices"></span>Fazer pedido</a>
+          <a class="btn btn-ghost" id="hero-wa" href="#" target="_blank" rel="noopener"><span data-icon="whatsapp"></span>WhatsApp</a>
+        </div>
+        <ul class="hero-facts" id="hero-facts"></ul>
+      </div>
+      <div class="hero-media">
+        <div class="hero-photo placeholder" id="hero-photo"></div>
+        <a class="hero-card" id="hero-card" href="#cardapio" hidden></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="destaques" aria-labelledby="destaques-t">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Mais pedidas</p><h2 id="destaques-t">Pizzas em destaque</h2></div>
+        <a class="link-arrow" href="#cardapio">Ver cardápio completo →</a>
+      </div>
+      <div class="featured" id="featured"><div class="skel" style="height:260px"></div><div class="skel" style="height:260px"></div><div class="skel" style="height:260px"></div></div>
+    </div>
+  </section>
+
+  <section class="menu-section" id="cardapio" aria-labelledby="cardapio-t">
+    <div class="wrap" style="padding-top:48px">
+      <p class="eyebrow">Cardápio</p>
+      <h2 id="cardapio-t" class="section-title-lg" style="font-family:var(--font-display);text-transform:uppercase;font-weight:600;font-size:clamp(28px,6vw,42px);margin:0">Escolha, monte e peça</h2>
+      <p class="section-sub" id="menu-sub">Toque num sabor para escolher o tamanho, juntar mais sabores e adicionar ao carrinho.</p>
+    </div>
+    <div class="menu-tools">
+      <div class="wrap">
+        <nav class="cat-tabs" id="cat-tabs" aria-label="Categorias do cardápio"></nav>
+        <div class="search-box" id="search-box">
+          <span data-icon="search"></span>
+          <input type="search" id="menu-search" placeholder="Buscar sabor ou bebida" aria-label="Buscar no cardápio" autocomplete="off">
+        </div>
+      </div>
+    </div>
+    <div class="wrap menu-body" id="menu-body">
+      <div class="skel skel-line"></div><div class="skel skel-line"></div><div class="skel skel-line"></div><div class="skel skel-line"></div>
+    </div>
+  </section>
+
+  <section class="section" id="diferenciais" aria-labelledby="dif-t">
+    <div class="wrap">
+      <div class="section-head"><div><p class="eyebrow">Por que a Rivoly</p><h2 id="dif-t">Do forno para a sua mesa</h2></div></div>
+      <div class="diffs" id="diffs"></div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre" style="padding-top:0" aria-labelledby="sobre-t">
+    <div class="wrap about">
+      <div class="about-photo reveal" id="about-photo"></div>
+      <div class="reveal">
+        <p class="eyebrow">Sobre a casa</p>
+        <h2 id="sobre-t">Da Rua Campos França para a sua casa</h2>
+        <p id="about-text"></p>
+        <div class="tags" id="about-tags"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="avaliacoes" style="padding-top:0" aria-labelledby="av-t">
+    <div class="wrap">
+      <div class="section-head"><div><p class="eyebrow">Avaliações</p><h2 id="av-t">Quem provou, aprovou</h2></div></div>
+      <div class="reviews-wrap" id="reviews"></div>
+    </div>
+  </section>
+
+  <section class="section insta" id="instagram" aria-labelledby="ig-t">
+    <div class="wrap">
+      <div class="insta-profile">
+        <img src="assets/img/logo-rivoly.jpg" onerror="this.remove()" alt="" width="58" height="58" loading="lazy">
+        <div style="flex:1;min-width:200px">
+          <p class="eyebrow" style="margin:0">Instagram</p>
+          <h2 id="ig-t" style="font-size:clamp(24px,5vw,34px)">@<span id="ig-user">pizzaria_rivoly</span></h2>
+        </div>
+        <a class="btn btn-primary" id="ig-follow" href="https://www.instagram.com/pizzaria_rivoly/" target="_blank" rel="noopener"><span data-icon="instagram"></span>Seguir no Instagram</a>
+      </div>
+      <p class="section-sub" style="margin:-6px 0 20px">Pizza saindo do forno, sabores novos e os recados da casa aparecem primeiro por lá.</p>
+      <div class="insta-grid" id="insta-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="onde-estamos" aria-labelledby="loc-t">
+    <div class="wrap">
+      <div class="section-head"><div><p class="eyebrow">Onde estamos</p><h2 id="loc-t">Venha até a Lapinha</h2></div></div>
+      <div class="location">
+        <div class="map-box" id="map-box"></div>
+        <div class="info-card" id="info-card"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid" id="footer-grid"></div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> <span data-bind="store_name">Pizzaria Rivoly</span>. Todos os direitos reservados.</span>
+      <span>Desenvolvido por King Tech Solutions</span>
+    </div>
+  </div>
+</footer>
+
+<button class="cart-bar" type="button" id="cart-bar" aria-label="Ver carrinho">
+  <span><span class="qty" id="cart-bar-qty">0 itens</span><strong id="cart-bar-total">R$ 0,00</strong></span>
+  <span class="go">Ver carrinho</span>
+</button>
+
+<!-- Produto -->
+<dialog class="sheet center" id="product-dialog" aria-labelledby="pd-title"></dialog>
+<!-- Carrinho e checkout -->
+<dialog class="sheet side" id="cart-dialog" aria-labelledby="cd-title"></dialog>
+
+<noscript><p style="padding:16px;background:#fff4dc">Ative o JavaScript para ver o cardápio e fazer pedidos. Você também pode ligar para (71) 99290-2891.</p></noscript>
+<script src="assets/js/site.bundle.js?v=20260928" defer></script>
+</body>
+</html>
